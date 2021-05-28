@@ -7,7 +7,7 @@
 body {
   background-color: #eeeeee;
   text-align: center;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
 }
 ul {
   list-style: none;
@@ -88,9 +88,16 @@ input {
   cursor: pointer;
 }
 
+.scroll-container {
+  overflow: auto;
+  margin: 2rem auto;
+  max-width: 90%;
+  max-height: 85vh;
+}
 .matrix {
   border: #222831 2px solid;
-  margin: 2rem auto;
+  /* max-width: 100%; */
+  margin: 0 auto;
   border-collapse: collapse;
 }
 
@@ -111,19 +118,24 @@ input {
 
 h2 {
   font-size: 2rem;
+  text-align: center;
 }
 .alignments {
-  margin: 1rem;
+  margin: 1rem 0;
   font-size: 1.5rem;
 }
 .alignments-section {
   display: none;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 .alignment {
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 1rem;
-  padding: 0.2rem 3rem;
+  padding: 0.2rem 1rem;
   border: #222831 2px solid;
   width: fit-content;
   text-align: left;
@@ -158,4 +170,25 @@ h2 {
   .algorithms {
     flex-wrap: wrap;
   }
+}
+
+/* width */
+.scroll-container::-webkit-scrollbar {
+  width: 10px;
+  height: 12px;
+}
+
+/* Track */
+.scroll-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

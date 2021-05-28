@@ -127,6 +127,8 @@ const displayAlignments = (alignments) => {
   alignmentscontainerElm.className = "alignments";
   alignments.forEach((alignment) => {
     const alignmentElm = document.createElement("div");
+    const scrollContainerElm = document.createElement("div");
+    scrollContainerElm.className = "scroll-container";
     alignmentElm.className = "alignment";
     let seqA = "";
     let seqB = "";
@@ -140,7 +142,8 @@ const displayAlignments = (alignments) => {
     <div class="seq"><span>A: </span>${seqA}</div>
     <div class="seq"><span>B: </span>${seqB}</div>
       `;
-    alignmentscontainerElm.appendChild(alignmentElm);
+    scrollContainerElm.appendChild(alignmentElm);
+    alignmentscontainerElm.appendChild(scrollContainerElm);
   });
   alignmentsElm.appendChild(alignmentscontainerElm);
 };
