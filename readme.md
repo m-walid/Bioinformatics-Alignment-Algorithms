@@ -1,4 +1,4 @@
-# BioInformatics Alignment Algorithms  Visualizatoin
+# BioInformatics Alignment Algorithms Implementation
 
 live Version [here](https://bio-alignment-algos.netlify.app/)
 
