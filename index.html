@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bio Alignment Algorithms</title>
+  </head>
+  <body>
+    <h1>Bioinformatics Alignment Algorithms</h1>
+    <ul class="algorithms">
+      <li class="active">Needleman-Wunsch</li>
+      <li>Smith-Waterman</li>
+      <li>Dot Plot Matrix With Window</li>
+    </ul>
+    <div class="form">
+      <div class="input-group">
+        <label for="">Sequence A</label>
+        <input
+          id="seq-a"
+          type="text"
+          value="ACGTTGACCTGTAACCTC"
+        />
+      </div>
+      <div class="input-group">
+        <label for="">Sequence B</label>
+        <input id="seq-b" type="text" value="ACCTTGTCCTCTTTGCCC" />
+      </div>
+      <div class="needle-smith__inputs">
+        <div class="input-group">
+          <label for="">Match</label>
+          <input id="match" type="number" value="2" />
+        </div>
+        <div class="input-group">
+          <label for="">Mismatch</label>
+          <input id="mismatch" type="number" value="-1" />
+        </div>
+        <div class="input-group">
+          <label for="">Gap</label>
+          <input id="gap" type="number" value="-1" />
+        </div>
+      </div>
+      <div class="dot-matrix__inputs">
+        <div class="input-group">
+          <label for="">Window size</label>
+          <input id="w-size" type="number" value="9" />
+        </div>
+        <div class="input-group">
+          <label for="">Step</label>
+          <input id="step" type="number" value="3" />
+        </div>
+        <div class="input-group">
+          <label for="">Threshold</label>
+          <input id="thresh" type="number" value="4" />
+        </div>
+      </div>
+      <button id="solve-btn">Solve</button>
+    </div>
+
+    <table class="matrix"></table>
+
+    <div class="alignments-section">
+      <h2>Alignments</h2>
+    </div>
+
+    <script src="./algorithms/DotMatrixWindow.js"></script>
+    <script src="./algorithms/NeedlemanWunsch.js"></script>
+    <script src="./algorithms/SmithWaterman.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
