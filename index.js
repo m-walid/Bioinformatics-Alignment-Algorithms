@@ -31,6 +31,7 @@ const fillMatrixElm = (matrix) => {
       if (j === 0) cellElm.className = "highlight";
       if (matrix[i][j] === true) {
         cellElm.innerText = "•";
+        cellElm.classList.add("dot-cell");
       } else if (matrix[i][j] === undefined) {
         cellElm.innerText = "";
       } else {
