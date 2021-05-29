@@ -103,10 +103,3 @@ class NeedlemanWunsch {
     this.traceBack();
   }
 }
-
-const needlemanWunsch = new NeedlemanWunsch("ACGTTGACCTGTAACCTC", "ACCTTGTCCTCTTTGCCC", 2, -1, -1);
-needlemanWunsch.solve();
-// // console.log(needlemanWunsch.matrix);
-// console.log(needlemanWunsch.alignments);
-// // needlemanWunsch.getDisplayMatrix();
-// console.log(needlemanWunsch.getDisplayMatrix());

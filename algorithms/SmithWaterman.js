@@ -103,15 +103,3 @@ class SmithWaterman {
     this.maxCells.forEach((cell) => this.traceBack(cell.pos.i, cell.pos.j));
   }
 }
-
-// const smithWaterman = new SmithWaterman(
-//   "TTCATAACD",
-//   "TGCTCGTADFEWSATGCTCGTAD",
-//   2,
-//   -1,
-//   -1
-// );
-// smithWaterman.solve();
-// console.log(smithWaterman.matrix);
-// console.log(smithWaterman.maxCells);
-// console.log(smithWaterman.alignments);

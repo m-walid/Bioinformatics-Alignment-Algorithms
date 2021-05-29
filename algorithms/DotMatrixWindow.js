@@ -46,13 +46,3 @@ class DotMatrixWindow {
     return displayMatrix;
   }
 }
-
-// const dotMatrixWindow = new DotMatrixWindow(
-//   "ACGTTGACCTGTAACCTC",
-//   "ACCTTGTCCTCTTTGCCC",
-//   9,
-//   3,
-//   4
-// );
-// dotMatrixWindow.solve();
-// console.log(dotMatrixWindow.matrix);
