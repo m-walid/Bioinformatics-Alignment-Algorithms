@@ -1,7 +1,7 @@
 class DotMatrixWindow {
   constructor(seqA, seqB, windowSize, step, threshold) {
-    this.seqA = seqA;
-    this.seqB = seqB;
+    this.seqA = seqA.toUpperCase();
+    this.seqB = seqB.toUpperCase();
     this.windowSize = windowSize;
     this.halfWindow = Math.floor(this.windowSize / 2);
     this.step = step;

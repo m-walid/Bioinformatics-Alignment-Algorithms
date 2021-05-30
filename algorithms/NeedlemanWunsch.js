@@ -1,7 +1,7 @@
 class NeedlemanWunsch {
   constructor(seqA, seqB, match, mismatch, gap) {
-    this.seqA = "i" + seqA;
-    this.seqB = "j" + seqB;
+    this.seqA = "i" + seqA.toUpperCase();
+    this.seqB = "j" + seqB.toUpperCase();
     this.match = match;
     this.mismatch = mismatch;
     this.gap = gap;
